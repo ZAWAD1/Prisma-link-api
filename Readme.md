@@ -207,30 +207,4 @@ process.on("SIGINT", async () => {
 
 ---
 
-## 🧠 Core Rules (Burn these into memory)
 
-1. Schema defines **models only**, not connections
-2. Runtime code owns the **database connection**
-3. One **pool + one Prisma client + one process**
-
----
-
-## 🚀 Next Steps
-
-- Add **authentication / validation**
-- Use **transactions** for complex operations
-- Consider **multi-tenant schema** for IOP project
-- Deploy safely with proper **Neon connection pooling**
-- Add **global error middleware** for production
-
----
-
-## 🔥 Mentor Verdict
-
-You now have a **production-correct Prisma 7 + Neon + Express setup**:
-
-- No magic connections
-- No silent failures
-- Proper layering: `.env → pg pool → Prisma adapter → PrismaClient → Express routes`
-
-Most tutorials fail to teach this correctly — you learned it the right way.
