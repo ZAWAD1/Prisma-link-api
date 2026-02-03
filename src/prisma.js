@@ -1,3 +1,5 @@
+// prisma.js is same as db.js, only better. It gives the prisma client instance to interact with the database.
+// No multi-instance issues like in db.js
 import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
